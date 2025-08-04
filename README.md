@@ -1,26 +1,26 @@
-# financial-analysis
+ financial-analysis
 A fast and simple Python tool to calculate key financial indicators (NPV, IRR, Payback, Discounted Payback) directly from Excel input.
 
-# 💰 Financial Analysis Tool
+ Financial Analysis Tool
 
 This is a lightweight Python project for quickly calculating key financial indicators from an Excel file.  
 The tool helps evaluate investment projects based on cash flow data.
 
-## 📈 Features
+ Features
 
 - Net Present Value (NPV)
 - Internal Rate of Return (IRR)
 - Payback Period
 - Discounted Payback Period
 
-## 📁 Input Format
+ Input Format
 
 Your Excel file must contain a column named exactly: cash_flows
 
 
 Each row under this column should represent the cash flow of a specific period (e.g., Year 1, Year 2, etc.).
 
-### 📝 Example `cash_flows.xlsx`
+ Example `cash_flows.xlsx`
 
 | cash_flows |
 |------------|
@@ -28,7 +28,7 @@ Each row under this column should represent the cash flow of a specific period (
 | 150        |
 | 200        |
 
-## 🚀 How to Run
+ How to Run
 
 1. Install required packages:
 
