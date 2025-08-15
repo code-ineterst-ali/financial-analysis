@@ -1,0 +1,49 @@
+
+📊 Financial Analysis Tool (Python)
+This script is a simple financial analysis utility that takes investment details, yearly income, and yearly cost, then calculates key financial metrics such as NPV, IRR, Payback Period, and Discounted Payback Period.
+✨ Features
+•	Net Present Value (NPV) calculation
+•	Internal Rate of Return (IRR) calculation
+•	Payback Period (undiscounted)
+•	Discounted Payback Period
+•	Neatly formatted yearly table showing income, cost, and net cash flow
+📦 Requirements
+You need Python 3 and the following packages:
+pip install numpy numpy-financial
+🚀 How to Run
+Run the script in your terminal:
+python financial.py
+The script will prompt for:
+1.	Number of years
+2.	Initial investment (positive number)
+3.	Discount rate (as a decimal or percentage, e.g., 0.1 or 10)
+4.	Income and cost for each year in the format income,cost (e.g., 50000,20000)
+📋 Example Input/Output
+Input:
+enter number of years: 3
+enter initial investment (positive number): 100000
+enter discount rate (e.g., 0.1 for 10% or 10 for 10%): 10
+input(income,cost) for year 1: 50000,20000
+input(income,cost) for year 2: 60000,25000
+input(income,cost) for year 3: 70000,30000
+Output:
+Net Present Value (NPV): 24132.21
+Internal Rate of Return (IRR) %: 18.45
+Payback Period (years): 3
+Discounted Payback Period (years): 3
+
+Year       Income         Cost          Net
+--------------------------------------------
+   1     50000.00     20000.00     30000.00
+   2     60000.00     25000.00     35000.00
+   3     70000.00     30000.00     40000.00
+--------------------------------------------
+ SUM    180000.00     75000.00    105000.00
+📚 Main Functions
+•	NPV() → Calculates Net Present Value
+•	IRR() → Calculates Internal Rate of Return
+•	payback_period() → Calculates the time needed to recover the initial investment (no discounting)
+•	discounted_payback_period() → Calculates the time needed to recover the initial investment with discounting
+•	print_table() → Displays a formatted table of yearly income, cost, and net cash flow
+
+
